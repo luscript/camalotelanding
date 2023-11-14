@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Verona-Regular";
+    src: url(./assets/fonts/Verona-Regular.otf);
+}
+
+@font-face {
+    font-family: "Verona-Light";
+    src: url(./assets/fonts/Verona-Light.otf);
+}
+
+@font-face {
+    font-family: "Molex";
+    src: url(./assets/fonts/MolexShoora-Bold.otf);
+}
+
+.header-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #461047;
+    color: #fff;
+    
+}
+
+#contacto {
+    position: relative;
+    background-image: url("./assets/images/Contacto/Fondo-43.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contenedor-contacto {
+    position: absolute;
+    top: 18%; /* Lleva el contenedor al centro vertical de la sección de contacto */
+    
+    width: 100%;
+    padding: 0 5px;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0; /* Background color for the parent wrapper */
+    border-radius: 30px; /* Border radius for the parent wrapper */
+    overflow: hidden; /* Ensure child backgrounds don't bleed out */
+}
+
+.form-wrapper, .redes-contacto {
+    width: 100%;
+    height: 50%;
+}
+
+.form-wrapper {
+    height: 55%;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    background-color:#461047;
+    
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    font-family: 'Verona-Regular';
+    font-weight: 200;
+}
+
+.form-contacto h2 {
+    font-family: inherit;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-contacto input, .form-contacto textarea {
+    font-family: inherit;
+    font-size: .9rem;
+    margin-top: 20px;
+    padding: 5px;;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Verona-Light';
+    border-bottom: 1px solid rgba(255, 255, 255, 0.43);
+    
+}
+
+
+.form-contacto textarea {
+    border: none;
+    resize: none;
+    height: 5em;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.empecemos {
+    font-family: 'Verona-Light';
+    margin-left: 3px;
+    font-weight: 100;
+}
+
+.form-contacto input:focus, .form-contacto textarea:focus {
+    outline: none;
+}
+
+.redes-contacto {
+    background-color: #2B192A;
+}
+
+.enviar-msg-btn {
+    width: 150px;
+    height: 35px;
+    background-color: #FBD8C8;
+    border: none;
+    font-family: 'Verona-Light';
+    font-size: 1.2rem;
+    color: #461047;
+    margin-top: 20px;
+    cursor: pointer;
+    align-self: end;
+    transition: transform .2s;
+}
+
+.enviar-msg-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+.redes-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+.texto-contacto h1, .texto-contacto span{
+    font-family: "Molex";
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.texto-contacto span {
+    color: #FBD8C8;
+}
+.texto-contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+
+}
+.qr-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: .5rem;
+
+}
+.qr-contacto img {
+    width: 150px;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num p {
+    font-family: 'Verona-Light';
+    font-size: 1.3rem;
+    color: #FBD8C8;
+    margin-left: 5px;
+
+}
+
+.num img {
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+}
+
+#img-1 {
+    margin-right: -10px;
+}
+
+#img-2 {
+    margin-left: -10px;
+}
+
+@media screen and (min-width: 650px) {
+    .contenedor-contacto {
+        width: 650px;
+        height: 58%;
+        top: 28%;
+    }
+    .form-wrapper, .redes-contacto {
+        padding-top: 2.5rem;
+        height: 100%;
+    }
+    .form-wrapper {
+        width: 55%;
+    }
+    .redes-contacto {
+        width: 45%;
+    }
+    .enviar-msg-btn {
+        position: absolute;
+        bottom: 30px;
+    }
+    .form-contacto h2 {
+        font-size: 1.8rem;
+    }
+    .form-contacto input, .form-contacto textarea {
+        font-size: 1.2rem;
+    }
+    .texto-contacto h1, .texto-contacto span{
+        font-size: 2.8rem;
+    }
+ 
+}
+
+@media screen and (min-width: 750px) {
+    .contenedor-contacto {
+        width: 700px;
+    }
+}

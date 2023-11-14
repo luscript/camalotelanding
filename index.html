@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Camalote Seeds</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nosotros.css" />
+    <link rel="stylesheet" href="contacto.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        src="assets/navbarIcon.svg"
+        alt="navIcon"
+        class="navIcon"
+        width="25"
+        onclick="toggleNavMenu()"
+        id="nav-toggler"
+      />
+      <ul class="navLinks nav">
+        <li><a href="#inicio" class="active">Home</a></li>
+        <li><a href="#semillas">Semas</a></li>
+        <li><a href="#sobreNosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+      </ul>
+    </nav>
+    <div class="navbar navbarMenu" id="nav-menu">
+      <ul class="navbarMenuLinks nav" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#semillas">Semas</a></li>
+        <li><a href="#sobreNosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+      </ul>
+    </div>
+
+    <section id="inicio" class="flex flex-col justify-center items-center">
+        <header class="header">
+          <img
+            src="./assets/Logotipo_CamaloteSeeds_SinFondo-09.png"
+            alt="logo"
+            width="160"
+            id="nav-logo"
+          />
+        </header>
+    </section>
+  
+    <section id="semillas" class="overlay">
+        <div class="info">
+          <div class="info-img">
+            <img
+              src="./assets/images/Genética camalote logo-20.png"
+              alt=""
+              class="logo-genetica"
+            />
+          </div>
+          <div class="info-img">
+            <h1 class="texto-genetica">
+              Conocé todas las <strong>características</strong> de nuestras
+              semillas.
+            </h1>
+          </div>
+        </div>
+        <div class="swiper">
+          <img
+            src="./assets/images/Flechas-25.png"
+            class="flechas flecha-izq prev-btn"
+          />
+          <img
+            src="./assets/images/Flechas-26.png"
+            class="flechas flecha-der next-btn"
+          />
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/Tarjeta Genéticas-28.png"
+                alt=""
+                class="seeds-img"
+              />
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/Tarjeta Genéticas-29.png"
+                alt=""
+                class="seeds-img"
+              />
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/Tarjeta Genéticas-27.png"
+                alt=""
+                class="seeds-img"
+              />
+            </div>
+            <!-- Slide-end -->
+          </div>
+          <div class="swiper-pagination">
+            <div class="swiper-pagination-bullet">
+              <img src="./assets/images/navegadores-22.png" alt="" />
+            </div>
+          </div>
+        </div>
+    </section>
+  
+    <section id="sobreNosotros">
+        <header class="headerNosotros">
+          <img
+            src="./assets/Logotipo_CamaloteSeeds_SinFondo-09.png"
+            alt="logo"
+            width="160"
+            id="nav-logo"
+          />
+        </header>
+        <div class="info-nosotros">
+          <div class="quienes-somos">
+            <h1 class="title">¿Quiénes somos?</h1>
+            <p class="text">
+              Somos un grupo de amigos de Santa Fe con más de 6 años de
+              experiencia como cultivadores y 3 años como criadores de semillas.
+              Hemos registrado nuestra variedad en INASE y ahora somos criadores y
+              fitomejoradores de categoría A. <br class="text-br"> Estamos emocionados de anunciar que
+              hemos comenzado a vender oficialmente nuestra genética al público,
+              ofreciendo nuestras semillas de manera legal en growshops y a
+              aquellos que tienen REPROCANN.
+            </p>
+          </div>
+          <div class="foto-expo">
+            <img
+              src="./assets/images/Nosotros/galería imágenes-35.png"
+              class="img-galeria"
+              id="caca"
+            />
+            <img
+              src="./assets/images/Nosotros/texto fotográfo créditos-36.png"
+              class="img-creditos"
+            />
+            <button class="ver-mas-btn">
+                ver más
+            </button>
+          </div>
+        </div>
+    </section>
+  
+    <section id="contacto">
+        <header class="header-contacto">
+            <img
+              src="./assets/Logotipo_CamaloteSeeds_SinFondo-09.png"
+              alt="logo"
+              width="160"
+              id="nav-logo"
+            />
+        </header>
+        <div class="contenedor-contacto">
+          <div class="container-wrapper">
+            <div class="form-wrapper">
+              <form class="form-contacto" onsubmit="return sendWhatsapp()">
+                <h2>Hola! <span class="empecemos">Empecemos</span></h2>
+                <input type="text" placeholder="Tu nombre" id="nombre" required>
+                <input type="text" placeholder="Asunto" id="asunto" required>
+                <textarea placeholder="Mensaje" id="mensaje" required></textarea>
+                <button class="enviar-msg-btn" type="submit">Enviar mensaje</button>
+              </form>
+            </div>
+            <div class="redes-contacto">
+              <div class="texto-contacto">
+                  <h1>
+                    Un placer <span>cultivar lazos</span> con vos.
+                  </h1>
+              </div>
+              <div class="qr-contacto">
+                <div class="num">
+                  <img src="./assets/images/Contacto/phone-call.png" alt="">
+                  <p>+54 342 590 6133</p>
+                </div>
+                <div class="qr-images">
+                  <img src="./assets/images/Contacto/QR-redes-camalote-13.png" id="img-1">
+                  <img src="./assets/images/Contacto/QR-redes-camalote-14.png" id="img-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="preguntas">
+      
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
