@@ -13,7 +13,7 @@
     src: url(./assets/fonts/MolexShoora-Bold.otf);
 }
 
-.header-contacto {
+/* .header-contacto {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     background-color: #461047;
     color: #fff;
     
-}
+} */
 
 #contacto {
     position: relative;

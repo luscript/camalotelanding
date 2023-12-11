@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Verona-Regular";
+    src: url(./assets/fonts/Verona-Regular.otf);
+}
+
+@font-face {
+    font-family: "Verona-Light";
+    src: url(./assets/fonts/Verona-Light.otf);
+}
+
+#preguntas {
+    background-image: url("./assets/images/FAQ/Fondo-60.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor-preguntas {
+    position: relative;
+    top: 100px;
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+
+.col-3 {
+    height: 55%;
+}
+
+.col-1 {
+    display: none;
+}
+
+.logo-FAQ {
+    width: 100%;
+    max-width: 380px;
+}
+
+.nros-FAQ {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nros-FAQ img {
+    opacity: 0.3;
+    transition: opacity 0.2s ease-in-out;
+    width: 69px;
+}
+
+#img-FAQ-1 {
+    opacity: 1;
+}
+.preg-FAQ {
+    text-align: center;
+    font-family: 'Verona-Regular';
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 20px;
+    color: #461047;
+}
+
+
+.col-3 {
+    align-items: start;
+    
+}
+
+.nrito-FAQ {
+    margin-top: 5px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+.texto-FAQ{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Verona-Regular';
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #461047;
+    margin-left: 10px;
+    margin-top: 15px;
+
+}
+
+.texto-FAQ span {
+    font-family: 'Verona-Regular';
+    font-weight: bold;
+
+}
+
+.ilust-preg1 {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    max-width: 400px;
+    align-self: center;
+}
+
+.ilust-preg2 {
+    width: 80%;
+    max-width: 380px;
+    align-self: center;
+}
+
+.ilust-preg3 {
+    align-self: end;
+    
+}
+
+.ilust-preg4 {
+    position: absolute;
+    bottom: 0;
+    width: 130px;
+    height: 150px;
+    align-self: end;
+
+
+}
+
+.preg {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute; /* Asegúrate de que inicialmente estén ocultos */
+    transition: opacity 0.5s ease-in-out; /* Agrega una transición suave */
+  }
+  
+.preg.mostrar {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+  }
+
+.personaje-FAQ {
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 750px) {
+    .contenedor-preguntas {
+        height: calc(100vh - 130px);
+        top: 130px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    .col {
+        margin-top: 40px;
+        justify-content: start;
+        height: 100%;
+        width: calc(100% / 3);
+    }
+    .col-1 {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    .col-3 {
+        margin-top: 80px;
+    }
+    .texto-FAQ, .preg-FAQ {
+        font-size: 1.7rem;
+    }
+    .nros-FAQ {
+        margin-top: 20px;
+    }
+    .preg-FAQ {
+        margin-top: 150px;
+    }
+    .nrito-FAQ {
+        width: 45px;
+    }
+    .logo-FAQ {
+        width: 100%;
+        max-width: 450px;
+    }
+    .nros-FAQ img {
+        width: 75px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .col-1, .col-2 {
+        margin-top: 0;
+    }
+    .nros-FAQ img {
+        width: 85px;
+    }
+}

@@ -47,7 +47,6 @@
 html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    height: 100vh;
     width: 100%;
 }
 
@@ -70,7 +69,7 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: 0;
+    z-index: 11;
 
 }
 
@@ -88,7 +87,8 @@ section {
 
 
 .header {
-    position: absolute;
+    position: sticky;
+    z-index: 10;
     top: 0;
     width: 100%;
     display: flex;
@@ -107,9 +107,11 @@ section {
     height: 100px;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
     
 }
+
+
 
 #nav-logo {
     margin-left: 20px;
@@ -179,10 +181,18 @@ section {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 80px;
+    top: 100px;
     width: 100%;
     height: 200px;
-    background-color: rgba(91, 43, 92, 0.83);
+    background-color: #461047;
+}
+
+.open #nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 
@@ -215,6 +225,12 @@ section {
     }
 }
 
+@media screen and (min-width: 760px) {
+    .header, .navbar {
+        height: 130px;
+    }
+}
+
 
 @media screen and (max-width: 760px) {
   
@@ -230,6 +246,7 @@ section {
         margin-right: 10px;
         cursor: pointer;
     }
+
 }
 
 .seeds-img {
@@ -293,7 +310,7 @@ section {
 }
 
 .logo-genetica {
-    margin-top: 3.8rem;
+    position: relative;
     top: 50px;
     width: 280px;
     height: 120px;
@@ -304,7 +321,8 @@ strong {
 }
 
 .texto-genetica {
-    margin-top: 2rem;
+    position: relative;
+    top: 65px;
     text-align: center;
     color: white;
     font-family: 'Verona-Light';
@@ -388,7 +406,7 @@ strong {
 
     }
     .flechas {
-        top: 30%;
+        top: 39%;
         width: 4rem;
     }
     .flecha-der {
@@ -399,7 +417,18 @@ strong {
     }
     
 }
-@media screen and (min-width: 950px) {
+
+@media screen and (min-width: 750px) {
+    .texto-genetica {
+        top: 80px;
+    }
+    .logo-genetica {
+        top: 80px
+    }
+    
+}
+
+@media screen and (min-width: 880px) {
     .swiper-slide {
         width: 55% !important;
         height: 40rem;

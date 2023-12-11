@@ -9,10 +9,20 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nosotros.css" />
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="preguntas.css" />
+    <link rel="stylesheet" href="inicio.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <header class="header" id="header">
+      <img
+        src="./assets/Logotipo_CamaloteSeeds_SinFondo-09.png"
+        alt="logo"
+        width="160"
+        id="nav-logo"
+      />
+    </header>
+    <nav class="navbar" id="navbar">
       <img
         src="assets/navbarIcon.svg"
         alt="navIcon"
@@ -22,7 +32,7 @@
         id="nav-toggler"
       />
       <ul class="navLinks nav">
-        <li><a href="#inicio" class="active">Home</a></li>
+        <li><a href="#inicio" class="active">Inicio</a></li>
         <li><a href="#semillas">Semas</a></li>
         <li><a href="#sobreNosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -39,162 +49,250 @@
       </ul>
     </div>
 
-    <section id="inicio" class="flex flex-col justify-center items-center">
-        <header class="header">
-          <img
-            src="./assets/Logotipo_CamaloteSeeds_SinFondo-09.png"
-            alt="logo"
-            width="160"
-            id="nav-logo"
-          />
-        </header>
+    <section
+      id="inicio"
+      class="flex flex-col justify-center items-center"
+    >
+      <div class="contenedor-inicio">
+        <div class="col-1-inicio col-inicio">
+            <img src="./assets/images/Landing Home/Personajes_Camalote-11.png" id="personaje-11">
+            <img src="./assets/images/Landing Home/Personajes_Camalote-12.png" id="personaje-12">
+        </div>
+        <div class="col-2-inicio col-inicio">
+          df
+      </div>
+      </div>
     </section>
-  
+
     <section id="semillas" class="overlay">
-        <div class="info">
-          <div class="info-img">
+      <div class="info">
+        <div class="info-img">
+          <img
+            src="./assets/images/Genética camalote logo-20.png"
+            alt=""
+            class="logo-genetica"
+          />
+        </div>
+        <div class="info-img">
+          <h1 class="texto-genetica">
+            Conocé todas las <strong>características</strong> de nuestras
+            semillas.
+          </h1>
+        </div>
+      </div>
+      <div class="swiper">
+        <img
+          src="./assets/images/Flechas-25.png"
+          class="flechas flecha-izq prev-btn"
+        />
+        <img
+          src="./assets/images/Flechas-26.png"
+          class="flechas flecha-der next-btn"
+        />
+        <div class="swiper-wrapper">
+          <!-- Slide-start -->
+          <div class="swiper-slide">
             <img
-              src="./assets/images/Genética camalote logo-20.png"
+              src="./assets/images/Tarjeta Genéticas-28.png"
               alt=""
-              class="logo-genetica"
+              class="seeds-img"
             />
           </div>
-          <div class="info-img">
-            <h1 class="texto-genetica">
-              Conocé todas las <strong>características</strong> de nuestras
-              semillas.
-            </h1>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/Tarjeta Genéticas-29.png"
+              alt=""
+              class="seeds-img"
+            />
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/Tarjeta Genéticas-27.png"
+              alt=""
+              class="seeds-img"
+            />
+          </div>
+          <!-- Slide-end -->
+        </div>
+        <div class="swiper-pagination">
+          <div class="swiper-pagination-bullet">
+            <img src="./assets/images/navegadores-22.png" alt="" />
           </div>
         </div>
-        <div class="swiper">
-          <img
-            src="./assets/images/Flechas-25.png"
-            class="flechas flecha-izq prev-btn"
-          />
-          <img
-            src="./assets/images/Flechas-26.png"
-            class="flechas flecha-der next-btn"
-          />
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <img
-                src="./assets/images/Tarjeta Genéticas-28.png"
-                alt=""
-                class="seeds-img"
-              />
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <img
-                src="./assets/images/Tarjeta Genéticas-29.png"
-                alt=""
-                class="seeds-img"
-              />
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <img
-                src="./assets/images/Tarjeta Genéticas-27.png"
-                alt=""
-                class="seeds-img"
-              />
-            </div>
-            <!-- Slide-end -->
-          </div>
-          <div class="swiper-pagination">
-            <div class="swiper-pagination-bullet">
-              <img src="./assets/images/navegadores-22.png" alt="" />
-            </div>
-          </div>
-        </div>
+      </div>
     </section>
-  
+
     <section id="sobreNosotros">
-        <header class="headerNosotros">
+      <!-- <header class="headerNosotros">
           <img
             src="./assets/Logotipo_CamaloteSeeds_SinFondo-09.png"
             alt="logo"
             width="160"
             id="nav-logo"
           />
-        </header>
-        <div class="info-nosotros">
-          <div class="quienes-somos">
-            <h1 class="title">¿Quiénes somos?</h1>
-            <p class="text">
-              Somos un grupo de amigos de Santa Fe con más de 6 años de
-              experiencia como cultivadores y 3 años como criadores de semillas.
-              Hemos registrado nuestra variedad en INASE y ahora somos criadores y
-              fitomejoradores de categoría A. <br class="text-br"> Estamos emocionados de anunciar que
-              hemos comenzado a vender oficialmente nuestra genética al público,
-              ofreciendo nuestras semillas de manera legal en growshops y a
-              aquellos que tienen REPROCANN.
-            </p>
-          </div>
-          <div class="foto-expo">
-            <img
-              src="./assets/images/Nosotros/galería imágenes-35.png"
-              class="img-galeria"
-              id="caca"
-            />
-            <img
-              src="./assets/images/Nosotros/texto fotográfo créditos-36.png"
-              class="img-creditos"
-            />
-            <button class="ver-mas-btn">
-                ver más
-            </button>
-          </div>
+        </header> -->
+      <div class="info-nosotros">
+        <div class="quienes-somos">
+          <h1 class="title">¿Quiénes somos?</h1>
+          <p class="text">
+            Somos un grupo de amigos de Santa Fe con más de 6 años de
+            experiencia como cultivadores y 3 años como criadores de semillas.
+            Hemos registrado nuestra variedad en INASE y ahora somos criadores y
+            fitomejoradores de categoría A. <br class="text-br" />
+            Estamos emocionados de anunciar que hemos comenzado a vender
+            oficialmente nuestra genética al público, ofreciendo nuestras
+            semillas de manera legal en growshops y a aquellos que tienen
+            REPROCANN.
+          </p>
         </div>
+        <div class="foto-expo">
+          <img
+            src="./assets/images/Nosotros/galería imágenes-35.png"
+            class="img-galeria"
+            id="caca"
+          />
+          <img
+            src="./assets/images/Nosotros/texto fotográfo créditos-36.png"
+            class="img-creditos"
+          />
+          <button class="ver-mas-btn">ver más</button>
+        </div>
+      </div>
     </section>
-  
+
     <section id="contacto">
-        <header class="header-contacto">
+      <!-- <header class="header-contacto">
             <img
               src="./assets/Logotipo_CamaloteSeeds_SinFondo-09.png"
               alt="logo"
               width="160"
               id="nav-logo"
             />
-        </header>
-        <div class="contenedor-contacto">
-          <div class="container-wrapper">
-            <div class="form-wrapper">
-              <form class="form-contacto" onsubmit="return sendWhatsapp()">
-                <h2>Hola! <span class="empecemos">Empecemos</span></h2>
-                <input type="text" placeholder="Tu nombre" id="nombre" required>
-                <input type="text" placeholder="Asunto" id="asunto" required>
-                <textarea placeholder="Mensaje" id="mensaje" required></textarea>
-                <button class="enviar-msg-btn" type="submit">Enviar mensaje</button>
-              </form>
+        </header> -->
+      <div class="contenedor-contacto">
+        <div class="container-wrapper">
+          <div class="form-wrapper">
+            <form class="form-contacto" onsubmit="return sendWhatsapp()">
+              <h2>Hola! <span class="empecemos">Empecemos</span></h2>
+              <input type="text" placeholder="Tu nombre" id="nombre" required />
+              <input type="text" placeholder="Asunto" id="asunto" required />
+              <textarea placeholder="Mensaje" id="mensaje" required></textarea>
+              <button class="enviar-msg-btn" type="submit">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+          <div class="redes-contacto">
+            <div class="texto-contacto">
+              <h1>Un placer <span>cultivar lazos</span> con vos.</h1>
             </div>
-            <div class="redes-contacto">
-              <div class="texto-contacto">
-                  <h1>
-                    Un placer <span>cultivar lazos</span> con vos.
-                  </h1>
+            <div class="qr-contacto">
+              <div class="num">
+                <img src="./assets/images/Contacto/phone-call.png" alt="" />
+                <p>+54 342 590 6133</p>
               </div>
-              <div class="qr-contacto">
-                <div class="num">
-                  <img src="./assets/images/Contacto/phone-call.png" alt="">
-                  <p>+54 342 590 6133</p>
-                </div>
-                <div class="qr-images">
-                  <img src="./assets/images/Contacto/QR-redes-camalote-13.png" id="img-1">
-                  <img src="./assets/images/Contacto/QR-redes-camalote-14.png" id="img-2">
-                </div>
+              <div class="qr-images">
+                <img
+                  src="./assets/images/Contacto/QR-redes-camalote-13.png"
+                  id="img-1"
+                />
+                <img
+                  src="./assets/images/Contacto/QR-redes-camalote-14.png"
+                  id="img-2"
+                />
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section id="preguntas">
-      
+      <div class="contenedor-preguntas">
+        <div class="col col-1">
+          <img src="./assets/images/FAQ/personaje-72.png" alt="" class="personaje-FAQ">
+        </div>
+        <div class="col col-2">
+          <img
+            src="./assets/images/FAQ/logo preguntas frecuentes-50.png"
+            class="logo-FAQ"
+          />
+          <div class="nros-FAQ">
+            <img src="./assets/images/FAQ/numeritos-55.png" alt="" onclick="seleccionarPregunta('preg-FAQ-1', this)" id="img-FAQ-1"/>
+            <img src="./assets/images/FAQ/numeritos-56.png" alt="" onclick="seleccionarPregunta('preg-FAQ-2', this)"/>
+            <img src="./assets/images/FAQ/numeritos-57.png" alt="" onclick="seleccionarPregunta('preg-FAQ-3', this)"/>
+            <img src="./assets/images/FAQ/numeritos-58.png" alt="" onclick="seleccionarPregunta('preg-FAQ-4', this)"/>
+          </div>
+          <p class="preg-FAQ preg-FAQ-1 preg mostrar">
+            ¿Cuál es la diferencia entre las Camalote Original y Premium?
+          </p>
+          <p class="preg-FAQ preg-FAQ-2 preg">
+            ¿Qué poder de germinación tienen nuestras semillas?
+          </p>
+          <p class="preg-FAQ preg-FAQ-3 preg">
+            ¿Qué semillas tenemos? <br />
+            ¿Son feminizadas o automáticas?
+          </p>
+          <p class="preg-FAQ preg-FAQ-4 preg">
+            ¿Qué sucede si se excede el tiempo de cosecha previsto?
+          </p>
+        </div>
+        <div class="col col-3 preg preg-FAQ-1 mostrar" >
+          <img src="./assets/images/FAQ/numeritos-55.png" class="nrito-FAQ preg-FAQ-1" />
+          <p class="texto-FAQ">
+            Ambas son la misma genética (Camalote), solo que las premium son una
+            <span>fina selección</span> de los mejores fenotipos
+          </p>
+          <img
+            src="./assets/images/FAQ/ilustración preg1-62.png"
+            class="ilust-preg1"
+          />
+        </div>
+        <div class="col col-3 preg-FAQ-2 preg">
+          <img src="./assets/images/FAQ/numeritos-56.png" class="nrito-FAQ" />
+          <p class="texto-FAQ">
+            Basado en nuestra estadística de producción y experiencias de
+            cultivadorxs, tenemos un promedio del 95% de germinación efectiva
+            (de 100 semillas, 95 nacen).
+          </p>
+          <img
+            src="./assets/images/FAQ/ilustración preg2-66.png"
+            class="ilust-preg2"
+          />
+        </div>
+        <div class="col col-3 preg preg-FAQ-3">
+          <img src="./assets/images/FAQ/numeritos-57.png" class="nrito-FAQ"/>
+          <p class="texto-FAQ">
+            Somos un banco santafesino de semillas <span>automáticas</span>,
+            producimos nuestras propias genéticas, <span>NO</span> hacemos
+            reventa de otros bancos.
+          </p>
+          <img
+            src="./assets/images/FAQ/ilustración preg3-68.png"
+            class="ilust-preg3"
+          />
+        </div>
+        <div class="col col-3 preg preg-FAQ-4">
+          <img src="./assets/images/FAQ/numeritos-58.png" class="nrito-FAQ"/>
+          <p class="texto-FAQ">
+            Esto se debe a una vegetación lenta que puede ser resultado de
+            diversos factores, como falta de luz, sustrato inadecuado, estrés en
+            los primeros días de vida, etc. <br> Por ejemplo: un cultivo exterior de
+            invierno es muy probable que demore más que lo habitual (110 a 120
+            en vez de 80 días).
+          </p>
+          <img
+            src="./assets/images/FAQ/ilustración preg4-69.png"
+            class="ilust-preg4"
+          />
+        </div>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    
+    <script  src="script.js"></script>
   </body>
 </html>
