@@ -149,14 +149,14 @@
     
 }
 
-@media screen and (min-width: 750px) {
+@media only screen and (min-width: 750px) {
     .contenedor-preguntas {
         height: calc(100vh - 130px);
         top: 130px;
     }
 }
 
-@media screen and (min-width: 950px) {
+@media only screen and (min-width: 950px) {
 
     .col {
         margin-top: 40px;
@@ -194,7 +194,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .col-1, .col-2 {
         margin-top: 0;
     }

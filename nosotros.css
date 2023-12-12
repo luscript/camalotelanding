@@ -109,7 +109,7 @@ p {
     line-height: 120%;
 }
  
-@media screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) {
     .img-galeria {
         width: 350px;
         
@@ -126,7 +126,7 @@ p {
     }
 }
 
-@media screen and (min-width: 650px) {
+@media only screen and (min-width: 650px) {
     .quienes-somos .title {
         font-size: 2.6rem;
         padding: 0;
@@ -146,7 +146,7 @@ p {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
     .quienes-somos .title {
         font-size: 3rem;
         padding: 0;
