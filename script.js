@@ -1,3 +1,6 @@
+
+
+
 function toggleNavMenu() {
   const navMenu = document.getElementById("nav-menu");
   const navLinks = document.getElementById("nav-links");
@@ -20,6 +23,25 @@ document.addEventListener("click", function (event) {
     navMenu.classList.remove("open");
     navLinks.classList.remove("active");
   }
+});
+
+document.querySelectorAll(".navbarMenuLinks a").forEach((link) => {
+  link.addEventListener("click", function () {
+    // Cerrar el menú en dispositivos móviles después de hacer clic en un enlace
+    const navMenu = document.getElementById("nav-menu");
+    const navLinks = document.getElementById("nav-links");
+    navMenu.classList.remove("open");
+    navLinks.classList.remove("active");
+
+    // Remover clase 'active' de todos los enlaces
+    document.querySelectorAll(".navbarMenuLinks a").forEach((link) => {
+      link.classList.remove("active-mobile");
+    });
+
+    // Agregar clase 'active' al enlace clicado
+    this.classList.add("active-mobile");
+    
+  });
 });
 
 window.addEventListener("resize", function (event) {
@@ -54,6 +76,8 @@ window.onscroll = () => {
     }
   });
 };
+
+
 
 var TrandingSlider = new Swiper(".swiper", {
   effect: "coverflow",

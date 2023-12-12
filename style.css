@@ -142,7 +142,7 @@ section {
     transition: 0.3s;
 }
 
-.navLinks a.active, .navbarMenuLinks a.active, .navLinks a:hover, .navbarMenuLinks a:hover {
+.navLinks a.active, .navbarMenuLinks a.active-mobile, .navLinks a:hover, .navbarMenuLinks a:hover {
     transform: scale(1.1);
     
     color: #461047; /* Set the text color to yellow for active links */
