@@ -67,16 +67,22 @@ window.onscroll = () => {
     if (top >= offset && top < offset + height) {
       navLinks.forEach((links) => {
         links.classList.remove("active");
+        links.classList.remove("active-mobile");
         document
           .querySelector(".nav li a[href*=" + id + "]")
           .classList.add("active");
       });
+       // Agregar clase 'active-mobile' al enlace correspondiente en la barra de navegación móvil
+       const mobileLink = document.querySelector(`.navbarMenuLinks a[href*=${id}]`);
+       if (mobileLink) {
+         mobileLink.classList.add("active-mobile");
+       }
       const stateObj = { sectionId: id };
       history.pushState(stateObj, "", `#${id}`);
+      
     }
   });
 };
-
 
 
 var TrandingSlider = new Swiper(".swiper", {

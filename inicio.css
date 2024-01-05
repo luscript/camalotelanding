@@ -2,31 +2,85 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 130px);
     position: relative;
-    top: 100px;
+    top: 130px;
 }
+
 
 .col-inicio {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    height: 50%;
     width: 100%;
 }
+.col-1-inicio {
+    align-items: center;
+}
+
+
+
+
+
+.col-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+
+#logo-inicio {
+    margin-left: -30px;
+    width: 60%;
+    max-width: 450px;
+    display: none;
+    height: auto;
+    
+}
+
+ #personaje-11 {
+/*     position: relative;
+
+    top: -10px;
+    left: 40px; */
+    margin-top: -80px;
+    z-index: 1;
+
+}  
+
 
 #cultiva-img {
-    max-width: 100%;
+    
     height: auto;
-    width: 400px;
+    width: 300px;
 }
+
+#texto-automaticas, #personaje-12 {
+    
+    width: 50%;
+    
+}
+
+#texto-automaticas {
+
+    
+    max-width: 350px;
+}
+
 
 
 #personaje-11, #personaje-12 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
+    
+    width: 50%;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 210px;
+
     z-index: 1;
 }
+
+ #personaje-12 {
+    margin-bottom: 20px;
+    margin-right: -50px;
+} 
+
