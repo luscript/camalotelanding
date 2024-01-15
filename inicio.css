@@ -32,7 +32,7 @@
 
 #logo-inicio {
     margin-left: -30px;
-    width: 60%;
+    width: 65%;
     max-width: 450px;
     display: none;
     height: auto;
@@ -83,4 +83,34 @@
     margin-bottom: 20px;
     margin-right: -50px;
 } 
+
+
+@media only screen and (min-width: 761px) {
+    .col-inicio {
+        
+        height: 100%;
+        justify-content: center;
+    }
+    .col-1-inicio {
+        width: 40%;
+    }
+    .col-2-inicio {
+        width: 60%;
+    }
+    .col-child {
+        align-items: end;
+    }
+    #logo-inicio {
+        display: flex;
+    }
+    #personaje-11, #personaje-12 {
+        max-width: 300px;
+    }
+    #cultiva-img {
+        width: 100%;
+    }
+    #texto-automaticas {
+        max-width: 400px;
+    }
+}
 
