@@ -85,6 +85,7 @@
 }
 
 .texto-FAQ{
+    z-index: 2;
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Verona-Regular';
@@ -111,17 +112,19 @@
 }
 
 .ilust-preg2 {
-    width: 80%;
+    width: 60%;
     max-width: 380px;
     align-self: center;
 }
 
 .ilust-preg3 {
+    display: none;
     align-self: end;
     
 }
 
 .ilust-preg4 {
+    display: none;
     position: absolute;
     bottom: 0;
     width: 130px;
@@ -147,6 +150,18 @@
 .personaje-FAQ {
     width: 100%;
     
+}
+
+@media only screen and (min-width: 560px) {
+    .ilust-preg4 {
+        position: absolute;
+        bottom: 0;
+        width: 130px;
+        height: 150px;
+        align-self: end;
+        display: block;
+    
+    }
 }
 
 @media only screen and (min-width: 750px) {
@@ -191,6 +206,20 @@
     }
     .nros-FAQ img {
         width: 75px;
+    }
+    .ilust-preg2 {
+        width: 80%;
+        max-width: 380px;
+        align-self: center;
+        margin-top: 30px;
+    }
+    .ilust-preg3 {
+        position: absolute;
+        display:block;
+        width: 350px;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
     }
 }
 
