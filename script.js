@@ -112,21 +112,16 @@ var TrandingSlider = new Swiper(".swiper", {
 function sendWhatsapp() {
   let numero = "+543425906133";
   let nombre = document.getElementById("nombre").value;
-  let asunto = document.getElementById("asunto").value;
+  let localidad = document.getElementById("localidad").value;
   let mensaje = document.getElementById("mensaje").value;
 
   var url =
     "https://wa.me/" +
     numero +
-    "?text=Nombre: " +
-    nombre +
-    "%0AAsunto: " +
-    asunto +
-    "%0AMensaje: " +
-    mensaje;
+    "?text=Hola! Soy " + nombre +". Te escribo desde " + localidad + ". " + mensaje;
   window.open(url, "_blank").focus();
   document.getElementById("nombre").value = "";
-  document.getElementById("asunto").value = "";
+  document.getElementById("localidad").value = "";
   document.getElementById("mensaje").value = "";
 }
 

@@ -187,7 +187,7 @@
             <form class="form-contacto" onsubmit="return sendWhatsapp()">
               <h2>Hola! <span class="empecemos">Empecemos</span></h2>
               <input type="text" placeholder="Tu nombre" id="nombre" required />
-              <input type="text" placeholder="Asunto" id="asunto" required />
+              <input type="text" placeholder="Localidad" id="localidad" required />
               <textarea placeholder="Mensaje" id="mensaje" required></textarea>
               <button class="enviar-msg-btn" type="submit">
                 Enviar mensaje
@@ -199,19 +199,21 @@
               <h1>Un placer <span>cultivar lazos</span> con vos.</h1>
             </div>
             <div class="qr-contacto">
-              <div class="num">
-                <img src="./assets/images/Contacto/phone-call.png" alt="" />
-                <p>+54 342 590 6133</p>
-              </div>
               <div class="qr-images">
-                <img
+                <div class="qr-content">
+                  <img
                   src="./assets/images/Contacto/QR-redes-camalote-13.png"
                   id="img-1"
-                />
-                <img
+                  />
+                  <a href="https://api.whatsapp.com/send/?phone=%2B543425906133" >Whatsapp</a>
+                </div>
+                <div class="qr-content">
+                  <img
                   src="./assets/images/Contacto/QR-redes-camalote-14.png"
                   id="img-2"
-                />
+                  />
+                  <a href="https://www.instagram.com/camalote.seeds/">Instagram</a>
+                </div>
               </div>
             </div>
           </div>

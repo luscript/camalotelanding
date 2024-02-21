@@ -195,7 +195,7 @@
         margin-top: 20px;
     }
     .preg-FAQ {
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .nrito-FAQ {
         width: 45px;
@@ -229,5 +229,14 @@
     }
     .nros-FAQ img {
         width: 85px;
+    }
+}
+
+@media only screen and ((min-height: 720px) and (max-height: 738px)) {
+    .swiper-wrapper {
+        height: 110% !important;
+    }
+    .swiper-pagination {
+        bottom: 100px !important;
     }
 }

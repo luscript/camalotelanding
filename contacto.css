@@ -63,7 +63,7 @@
 }
 
 .form-wrapper {
-    height: 55%;
+    height: 52%;
 }
 
 .form-wrapper {
@@ -189,6 +189,12 @@
 .qr-contacto img {
     width: 150px;
 }
+.qr-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
 
 .num {
     display: flex;
@@ -207,16 +213,23 @@
 .num img {
     width: 20px;
     height: 20px;
-    margin-left: -20px;
+    
 }
 
-#img-1 {
+.qr-content a {
+    text-align: center;
+    font-family: 'Verona-Light';
+    color: rgba(255, 255, 255, 0.863);
+    font-weight: lighter;
+}
+
+/* #img-1 {
     margin-right: -10px;
 }
 
 #img-2 {
     margin-left: -10px;
-}
+} */
 
 @media only screen and (min-width: 650px) {
     .contenedor-contacto {
@@ -229,10 +242,10 @@
         height: 100%;
     }
     .form-wrapper {
-        width: 55%;
+        width: 50%;
     }
     .redes-contacto {
-        width: 45%;
+        width: 50%;
     }
     .enviar-msg-btn {
         position: absolute;
